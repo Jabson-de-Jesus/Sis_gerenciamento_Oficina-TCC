@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15BF4B30-6A2D-4D8F-8A28-26486452777F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PROJETO_OFICINA</RootNamespace>
+    <AssemblyName>PROJETO_OFICINA</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CAMADAS\DAL\Orcamentos.cs" />
+    <Compile Include="CAMADAS\DAL\Servicos.cs" />
+    <Compile Include="Frmautomoveis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmautomoveis.Designer.cs">
+      <DependentUpon>Frmautomoveis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAMADAS\DAL\Automoveis.cs" />
+    <Compile Include="CAMADAS\DAL\Caixa.cs" />
+    <Compile Include="CAMADAS\DAL\conexao.cs" />
+    <Compile Include="CAMADAS\DAL\Clientes.cs" />
+    <Compile Include="CAMADAS\DAL\Detalhe_caixa.cs" />
+    <Compile Include="CAMADAS\DAL\Estoque.cs" />
+    <Compile Include="CAMADAS\DAL\Funcionarios.cs" />
+    <Compile Include="CAMADAS\DAL\Itens_estoque.cs" />
+    <Compile Include="CAMADAS\DAL\Material.cs" />
+    <Compile Include="CAMADAS\MODEL\Automoveis.cs" />
+    <Compile Include="CAMADAS\MODEL\Caixa.cs" />
+    <Compile Include="CAMADAS\MODEL\Clientes.cs" />
+    <Compile Include="CAMADAS\MODEL\Detalhe_caixa.cs" />
+    <Compile Include="CAMADAS\MODEL\Estoque.cs" />
+    <Compile Include="CAMADAS\MODEL\Funcionarios.cs" />
+    <Compile Include="CAMADAS\MODEL\Itens_estoque.cs" />
+    <Compile Include="CAMADAS\MODEL\Materiais.cs" />
+    <Compile Include="CAMADAS\MODEL\Orcamentos.cs" />
+    <Compile Include="CAMADAS\MODEL\Ordem_Servicos.cs" />
+    <Compile Include="CAMADAS\MODEL\Servicos.cs" />
+    <Compile Include="Frmcliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmcliente.Designer.cs">
+      <DependentUpon>Frmcliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmfuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmfuncionario.Designer.cs">
+      <DependentUpon>Frmfuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmmaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmmaterial.Designer.cs">
+      <DependentUpon>Frmmaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmmenu.Designer.cs">
+      <DependentUpon>Frmmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrcamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrcamentos.Designer.cs">
+      <DependentUpon>FrmOrcamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmordemdeservico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmordemdeservico.Designer.cs">
+      <DependentUpon>Frmordemdeservico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Frmservico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmservico.Designer.cs">
+      <DependentUpon>Frmservico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Servico_prestados.cs" />
+    <EmbeddedResource Include="Frmautomoveis.resx">
+      <DependentUpon>Frmautomoveis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmcliente.resx">
+      <DependentUpon>Frmcliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmfuncionario.resx">
+      <DependentUpon>Frmfuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmmaterial.resx">
+      <DependentUpon>Frmmaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmmenu.resx">
+      <DependentUpon>Frmmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrcamentos.resx">
+      <DependentUpon>FrmOrcamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmordemdeservico.resx">
+      <DependentUpon>Frmordemdeservico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Frmservico.resx">
+      <DependentUpon>Frmservico.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
